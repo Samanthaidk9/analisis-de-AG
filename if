@@ -1,0 +1,32 @@
+precio=400
+#Estructura if
+if precio >= 500:
+    print("Esta muy caro!!!")
+    #Estructura if-else
+if precio >= 500:
+    print("Esta muy caro!!!")
+else: 
+    print("Lo compro!!!")
+
+    #Estructura if-anidadas
+if precio <= 500:
+    print("Esta muy caro!!!")
+elif precio == 501:
+    print(precio+100)
+else:
+    print("Lo compro!!!")
+
+    #Ejemplo IF
+numero=int(input("Digite un numero del 1 al 5: "))
+if numero== 1:
+    print(f"el numero que digito es el uno")
+elif numero == 2:
+        print(f"el numero que digito es el dos")
+elif numero == 3:
+        print(f"el numero que digito es el tres")
+elif numero == 4:
+        print(f"el numero que digito es el cuatro")
+elif numero == 5:
+        print(f"el numero que digito es el cinco")
+        
+
