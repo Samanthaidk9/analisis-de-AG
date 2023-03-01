@@ -1,6 +1,7 @@
-"""""
+
 #libreria
 import math
+"""
 ##Adquirir informacion
 ##Entradas
 a = int (input("digite el numero 1:"))
@@ -24,5 +25,12 @@ print(f"el resultado de la raiz es: {h}")
 print("gracias por su atencion")
 """
 
-operador = ((15/3)*(7+(68-15*33+((45**2)/5)/3)/2)+19)
-print(float(operador))
+R = ((15/3)*(7+(68-15*33+((45**2)/5)/3)/2)+19)
+print(float(R))
+
+A=(4+8*2)/4-(3**2)+math.sqrt (4)
+
+print(A)
+
+
+
