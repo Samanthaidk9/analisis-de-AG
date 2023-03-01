@@ -1,0 +1,10 @@
+numero =int(input("Digite el numero a transformar: ")) 
+#conv. decimal-binario
+binario = bin(numero)
+print(binario)
+#conv. decimal-hexa
+hexadecimal = hex(numero)
+print(f"Hexadecimal:{hexadecimal}")
+#conv. decimal-octal
+octal= oct(numero)
+print(f"octal: {octal}")
