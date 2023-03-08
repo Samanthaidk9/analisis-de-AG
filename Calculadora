@@ -1,0 +1,112 @@
+#importar libreria
+import math
+#Definir funciones
+def decimal_binario(num_dec):
+    num_bin = bin(num_dec)
+    return num_bin
+
+def binario_octal (num_bin):
+    num_oct = oct (num_bin)
+    return num_oct
+
+def binario_decimal(num_bin):
+    num_dec = int(num_bin, 2)
+    return num_dec
+
+def decimal_hexadecimal(num_dec):
+    num_hexa = hex(num_dec)
+    return num_hexa
+
+def hexadecimal_decimal(num_hexa):
+    num_dec = int(num_hexa, 16)
+    return num_dec
+# Hacer un menu con diferentes opciones
+def print_menu():
+    print("Seleccione una opción:")
+    print("1. Convertir de decimal a binario")
+    print("2. Convertir de binario a octal")
+    print("3. Convertir de binario a decimal")
+    print("4. Convertir de decimal a hexadecimal")
+    print("5. Convertir de hexadecimal a decimal")
+    print("6. Suma")
+    print("7. Resta")
+    print("8. Multiplicación")
+    print("9. División")
+    print("10. Logaritmo")
+    print("11. Raiz")
+    print("12. Residuo")
+    print("13. Potencia")
+    print("14. Salir")
+
+
+def menu():
+    while True:
+        print_menu()
+        option = input("Opción seleccionada: ")
+
+        if option == '1':
+            num_dec = int(input("Ingrese el número decimal: "))
+            num_bin = decimal_binario(num_dec)
+            print(f"El número binario es:----------- {num_bin} -----------")
+        elif option == '2':
+            binario = input("Ingresa un número binario: ")
+            decimal = int(binario, 2)
+            octal = oct(decimal)
+            print("El número en octal es:", octal)
+        elif option == '3':
+            num_bin = input("Ingrese el número binario: ")
+            num_dec = binario_decimal(num_bin)
+            print(f"El número decimal es: ----------- {num_dec} -----------")
+        elif option == '4':
+            num_dec= int(input("Ingrese el número decimal: "))
+            num_hexa = decimal_hexadecimal(num_dec)
+            print(f"El número hexadecimal es:----------- {num_hexa} -----------")
+        elif option == '5':
+            num_hexa = input("Ingrese el número hexadecimal: ")
+            num_dec = hexadecimal_decimal(num_hexa)
+            print(f"El número decimal es:----------- {num_dec} -----------")
+        elif option == '6':
+            num1 = int(input("Ingrese el primer número: "))
+            num2 = int(input("Ingrese el segundo número: "))
+            result = num1 + num2
+            print(f"El resultado es:----------- {result} ----------")
+        elif option == '7':
+            num1 = int(input("Ingrese el primer número: "))
+            num2 = int(input("Ingrese el segundo número: "))
+            result = num1 - num2
+            print(f"El resultado es:----------- {result} -----------")
+        elif option == '8':
+            num1 = int(input("Ingrese el primer número: "))
+            num2 = int(input("Ingrese el segundo número: "))
+            result = num1 * num2
+            print(f"El resultado es:----------- {result} -----------")
+        elif option == '9':
+            num1 = int(input("Ingrese el primer número: "))
+            num2 = int(input("Ingrese el segundo número: "))
+            result = num1 / num2
+            print(f"El resultado es:----------- {result} -----------")
+        elif option =='10' :
+            num1 = int (input("Ingrese el numero: "))
+            result = math.log (num1)
+            print(f"El resultado es: ----------- {result} -----------")
+        elif option =='11' :
+            num1 = int (input("Ingrese el numero: "))
+            result = math.sqrt (num1) 
+            print(f"El resultado es: ----------- {result} -----------")
+        elif option == '12':
+            num1 = int(input("Ingrese el primer número: "))
+            num2 = int(input("Ingrese el segundo número: "))
+            result = num1 % num2
+            print(f"El resultado es: ----------- {result} ----------")
+        elif option == '13':
+            num1 = int(input("Ingrese el primer número: "))
+            num2 = int(input("Ingrese el segundo número: "))
+            result = num1 ** num2
+            print(f"El resultado es:----------- {result} ------------")
+
+        elif option == '14':
+            break
+        else:
+            print("Opción inválida, por favor seleccione una opción válida")
+
+menu()
