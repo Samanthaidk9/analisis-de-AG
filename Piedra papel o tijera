@@ -24,7 +24,7 @@ print(f"La op de la CPU es: {cpu}")
 #Proceso
 while True:
    if not usuario in op:
-         print("Opcion no valida!!!")
+         print("Opcion no valida")
          continue
    if usuario == "Piedra" and cpu == "Piedra":
          print("Empate")
